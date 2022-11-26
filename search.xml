@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>使用mysql时的常用命令</title>
+      <title>c++</title>
+      <link href="/2022/11/26/2022-11-26-%E7%AC%AC%E4%B8%89%E7%AF%87/"/>
+      <url>/2022/11/26/2022-11-26-%E7%AC%AC%E4%B8%89%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[<h2 id="你好-0003"><a href="#你好-0003" class="headerlink" title="你好 0003"></a>你好 0003</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java</title>
       <link href="/2022/11/26/2022-11-26-%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
       <url>/2022/11/26/2022-11-26-%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<h2 id="关于mysql服务器不能开启的相关解决办法"><a href="#关于mysql服务器不能开启的相关解决办法" class="headerlink" title="关于mysql服务器不能开启的相关解决办法"></a>关于mysql服务器不能开启的相关解决办法</h2><h2 id="mysql-–V-检测MySQL版本是否正确"><a href="#mysql-–V-检测MySQL版本是否正确" class="headerlink" title="mysql –V:检测MySQL版本是否正确"></a>mysql –V:检测MySQL版本是否正确</h2><h2 id="-mysqld-–remove：删除MySQL服务；"><a href="#-mysqld-–remove：删除MySQL服务；" class="headerlink" title="    mysqld –remove：删除MySQL服务；"></a>    mysqld –remove：删除MySQL服务；</h2><h2 id="mysqld-–initialize-或-mysqld-–initialize-insecure-–user-mysql：初始化date文件"><a href="#mysqld-–initialize-或-mysqld-–initialize-insecure-–user-mysql：初始化date文件" class="headerlink" title="mysqld –initialize 或 mysqld –initialize-insecure –user=mysql：初始化date文件"></a>mysqld –initialize 或 mysqld –initialize-insecure –user=mysql：初始化date文件</h2><h2 id="-mysqld-–install：安装MySQL服务；"><a href="#-mysqld-–install：安装MySQL服务；" class="headerlink" title="    mysqld –install：安装MySQL服务；"></a>    mysqld –install：安装MySQL服务；</h2><h2 id="-net-start-mysql-启动MYSQL服务"><a href="#-net-start-mysql-启动MYSQL服务" class="headerlink" title="    net start mysql:启动MYSQL服务"></a>    net start mysql:启动MYSQL服务</h2><h2 id="-mysql-u-root-p：登录MySQL；"><a href="#-mysql-u-root-p：登录MySQL；" class="headerlink" title="    mysql -u root -p：登录MySQL；"></a>    mysql -u root -p：登录MySQL；</h2><h2 id="-在my-ini中插入："><a href="#-在my-ini中插入：" class="headerlink" title="    在my.ini中插入："></a>    在my.ini中插入：</h2><h2 id="由于mysqld-–skip-grant-tables实测在mysql8-0中已失效，现使用mysqld-–console-–skip-grant-tables-–shared-memory"><a href="#由于mysqld-–skip-grant-tables实测在mysql8-0中已失效，现使用mysqld-–console-–skip-grant-tables-–shared-memory" class="headerlink" title="由于mysqld –skip-grant-tables实测在mysql8.0中已失效，现使用mysqld –console –skip-grant-tables –shared-memory"></a>由于mysqld –skip-grant-tables实测在mysql8.0中已失效，现使用mysqld –console –skip-grant-tables –shared-memory</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="此处如果在cmd中以命令的形式输入需要“mysqld-–defaults-file-”C-hspmysql-mysql-5-7-19-winx64-bin-my-default-ini”"><a href="#此处如果在cmd中以命令的形式输入需要“mysqld-–defaults-file-”C-hspmysql-mysql-5-7-19-winx64-bin-my-default-ini”" class="headerlink" title="此处如果在cmd中以命令的形式输入需要“mysqld –defaults-file=”C:\hspmysql\mysql-5.7.19-winx64\bin\my-default.ini”"></a>此处如果在cmd中以命令的形式输入需要“mysqld –defaults-file=”C:\hspmysql\mysql-5.7.19-winx64\bin\my-default.ini”</h2><h2 id="–console-–skip-grant-tables”使用双扛，"><a href="#–console-–skip-grant-tables”使用双扛，" class="headerlink" title="–console –skip-grant-tables”使用双扛，"></a>–console –skip-grant-tables”使用双扛，</h2><h2 id="在配置my-ini文件中在mysqld中添加“skip-grant-table”即可。"><a href="#在配置my-ini文件中在mysqld中添加“skip-grant-table”即可。" class="headerlink" title="在配置my.ini文件中在mysqld中添加“skip-grant-table”即可。"></a>在配置my.ini文件中在mysqld中添加“skip-grant-table”即可。</h2><h2 id="use-mysql"><a href="#use-mysql" class="headerlink" title="use mysql;"></a>use mysql;</h2><h2 id="-update-user-set-authentication-string-password-‘141318’-where-user-’root’-and-Host-’localhost’-修改用户密码"><a href="#-update-user-set-authentication-string-password-‘141318’-where-user-’root’-and-Host-’localhost’-修改用户密码" class="headerlink" title="    update user set authentication_string=password(‘141318’) where user=’root’ and Host=’localhost’; 修改用户密码"></a>    update user set authentication_string=password(‘141318’) where user=’root’ and Host=’localhost’; 修改用户密码</h2><h2 id="如果想所有ip都可以连接-MySQL，使用如下命令："><a href="#如果想所有ip都可以连接-MySQL，使用如下命令：" class="headerlink" title="如果想所有ip都可以连接 MySQL，使用如下命令："></a>如果想所有ip都可以连接 MySQL，使用如下命令：</h2><h2 id="GRANT-ALL-PRIVILEGES-ON-TO-‘root‘-’-’-IDENTIFIED-BY-‘root’"><a href="#GRANT-ALL-PRIVILEGES-ON-TO-‘root‘-’-’-IDENTIFIED-BY-‘root’" class="headerlink" title="GRANT ALL PRIVILEGES ON . TO ‘root‘@’%’ IDENTIFIED BY ‘root’"></a>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘root‘@’%’ IDENTIFIED BY ‘root’</h2><h2 id="所有ip都可以连接-MySQL上的所有库中的所有表。"><a href="#所有ip都可以连接-MySQL上的所有库中的所有表。" class="headerlink" title="%所有ip都可以连接*.* MySQL上的所有库中的所有表。"></a>%所有ip都可以连接*.* MySQL上的所有库中的所有表。</h2><h2 id="mysqld-–initialized-insecure：初始化MySQL，并且默认密码为空；"><a href="#mysqld-–initialized-insecure：初始化MySQL，并且默认密码为空；" class="headerlink" title="mysqld –initialized -insecure：初始化MySQL，并且默认密码为空；"></a>mysqld –initialized -insecure：初始化MySQL，并且默认密码为空；</h2><h2 id="mysqld-–initialized-–console：初始化MySQL；"><a href="#mysqld-–initialized-–console：初始化MySQL；" class="headerlink" title="mysqld –initialized –console：初始化MySQL；"></a>mysqld –initialized –console：初始化MySQL；</h2><h2 id="alter-user-‘root‘-’localhost’identified-by-‘密码’-：修改管理员用户的密码；"><a href="#alter-user-‘root‘-’localhost’identified-by-‘密码’-：修改管理员用户的密码；" class="headerlink" title="alter user ‘root‘@’localhost’identified by ‘密码’;：修改管理员用户的密码；"></a>alter user ‘root‘@’localhost’identified by ‘密码’;：修改管理员用户的密码；</h2><h2 id="-紧急错误检测："><a href="#-紧急错误检测：" class="headerlink" title="    紧急错误检测："></a>    紧急错误检测：</h2><h2 id="mysqld-–console：查看日志"><a href="#mysqld-–console：查看日志" class="headerlink" title="mysqld –console：查看日志"></a>mysqld –console：查看日志</h2><h2 id="netstat-aon-findstr-“3306”：查看3306端口使用情况"><a href="#netstat-aon-findstr-“3306”：查看3306端口使用情况" class="headerlink" title="netstat -aon|findstr “3306”：查看3306端口使用情况"></a>netstat -aon|findstr “3306”：查看3306端口使用情况</h2><h2 id="taskkill-f-pid-4912：强制中止端口（PID号）进程"><a href="#taskkill-f-pid-4912：强制中止端口（PID号）进程" class="headerlink" title="taskkill/f /pid 4912：强制中止端口（PID号）进程"></a>taskkill/f /pid 4912：强制中止端口（PID号）进程</h2><h2 id="-补充："><a href="#-补充：" class="headerlink" title="    补充："></a>    补充：</h2><h2 id="regedit：注册表"><a href="#regedit：注册表" class="headerlink" title="regedit：注册表"></a>regedit：注册表</h2><h2 id="netstat-ano-找到本地地址为0-0-0-0-3306的地址-记住其PID的值"><a href="#netstat-ano-找到本地地址为0-0-0-0-3306的地址-记住其PID的值" class="headerlink" title="netstat -ano 找到本地地址为0.0.0.0:3306的地址  记住其PID的值"></a>netstat -ano 找到本地地址为0.0.0.0:3306的地址  记住其PID的值</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="关于-mysql-服务器不能开启的相关解决办法"><a href="#关于-mysql-服务器不能开启的相关解决办法" class="headerlink" title="关于 mysql 服务器不能开启的相关解决办法"></a>关于 mysql 服务器不能开启的相关解决办法</h2><h2 id="mysql-–V-检测-MySQL-版本是否正确"><a href="#mysql-–V-检测-MySQL-版本是否正确" class="headerlink" title="mysql –V:检测 MySQL 版本是否正确"></a>mysql –V:检测 MySQL 版本是否正确</h2><h2 id="-mysqld-–remove：删除-MySQL-服务；"><a href="#-mysqld-–remove：删除-MySQL-服务；" class="headerlink" title=" mysqld –remove：删除 MySQL 服务；"></a> mysqld –remove：删除 MySQL 服务；</h2><h2 id="mysqld-–initialize-或-mysqld-–initialize-insecure-–user-mysql：初始化-date-文件"><a href="#mysqld-–initialize-或-mysqld-–initialize-insecure-–user-mysql：初始化-date-文件" class="headerlink" title="mysqld –initialize 或 mysqld –initialize-insecure –user=mysql：初始化 date 文件"></a>mysqld –initialize 或 mysqld –initialize-insecure –user=mysql：初始化 date 文件</h2><h2 id="-mysqld-–install：安装-MySQL-服务；"><a href="#-mysqld-–install：安装-MySQL-服务；" class="headerlink" title=" mysqld –install：安装 MySQL 服务；"></a> mysqld –install：安装 MySQL 服务；</h2><h2 id="-net-start-mysql-启动-MYSQL-服务"><a href="#-net-start-mysql-启动-MYSQL-服务" class="headerlink" title=" net start mysql:启动 MYSQL 服务"></a> net start mysql:启动 MYSQL 服务</h2><h2 id="-mysql-u-root-p：登录-MySQL；"><a href="#-mysql-u-root-p：登录-MySQL；" class="headerlink" title=" mysql -u root -p：登录 MySQL；"></a> mysql -u root -p：登录 MySQL；</h2><h2 id="-在-my-ini-中插入："><a href="#-在-my-ini-中插入：" class="headerlink" title=" 在 my.ini 中插入："></a> 在 my.ini 中插入：</h2><h2 id="由于-mysqld-–skip-grant-tables-实测在-mysql8-0-中已失效，现使用-mysqld-–console-–skip-grant-tables-–shared-memory"><a href="#由于-mysqld-–skip-grant-tables-实测在-mysql8-0-中已失效，现使用-mysqld-–console-–skip-grant-tables-–shared-memory" class="headerlink" title="由于 mysqld –skip-grant-tables 实测在 mysql8.0 中已失效，现使用 mysqld –console –skip-grant-tables –shared-memory"></a>由于 mysqld –skip-grant-tables 实测在 mysql8.0 中已失效，现使用 mysqld –console –skip-grant-tables –shared-memory</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="此处如果在-cmd-中以命令的形式输入需要“mysqld-–defaults-file-”C-hspmysql-mysql-5-7-19-winx64-bin-my-default-ini”"><a href="#此处如果在-cmd-中以命令的形式输入需要“mysqld-–defaults-file-”C-hspmysql-mysql-5-7-19-winx64-bin-my-default-ini”" class="headerlink" title="此处如果在 cmd 中以命令的形式输入需要“mysqld –defaults-file=”C:\hspmysql\mysql-5.7.19-winx64\bin\my-default.ini”"></a>此处如果在 cmd 中以命令的形式输入需要“mysqld –defaults-file=”C:\hspmysql\mysql-5.7.19-winx64\bin\my-default.ini”</h2><h2 id="–console-–skip-grant-tables”使用双扛，"><a href="#–console-–skip-grant-tables”使用双扛，" class="headerlink" title="–console –skip-grant-tables”使用双扛，"></a>–console –skip-grant-tables”使用双扛，</h2><h2 id="在配置-my-ini-文件中在-mysqld-中添加“skip-grant-table”即可。"><a href="#在配置-my-ini-文件中在-mysqld-中添加“skip-grant-table”即可。" class="headerlink" title="在配置 my.ini 文件中在 mysqld 中添加“skip-grant-table”即可。"></a>在配置 my.ini 文件中在 mysqld 中添加“skip-grant-table”即可。</h2><h2 id="use-mysql"><a href="#use-mysql" class="headerlink" title="use mysql;"></a>use mysql;</h2><h2 id="-update-user-set-authentication-string-password-‘141318’-where-user-’root’-and-Host-’localhost’-修改用户密码"><a href="#-update-user-set-authentication-string-password-‘141318’-where-user-’root’-and-Host-’localhost’-修改用户密码" class="headerlink" title=" update user set authentication_string=password(‘141318’) where user=’root’ and Host=’localhost’; 修改用户密码"></a> update user set authentication_string=password(‘141318’) where user=’root’ and Host=’localhost’; 修改用户密码</h2><h2 id="如果想所有-ip-都可以连接-MySQL，使用如下命令："><a href="#如果想所有-ip-都可以连接-MySQL，使用如下命令：" class="headerlink" title="如果想所有 ip 都可以连接 MySQL，使用如下命令："></a>如果想所有 ip 都可以连接 MySQL，使用如下命令：</h2><h2 id="GRANT-ALL-PRIVILEGES-ON-TO-‘root‘-’-’-IDENTIFIED-BY-‘root’"><a href="#GRANT-ALL-PRIVILEGES-ON-TO-‘root‘-’-’-IDENTIFIED-BY-‘root’" class="headerlink" title="GRANT ALL PRIVILEGES ON . TO ‘root‘@’%’ IDENTIFIED BY ‘root’"></a>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘root‘@’%’ IDENTIFIED BY ‘root’</h2><h2 id="所有-ip-都可以连接-MySQL-上的所有库中的所有表。"><a href="#所有-ip-都可以连接-MySQL-上的所有库中的所有表。" class="headerlink" title="%所有 ip 都可以连接*.* MySQL 上的所有库中的所有表。"></a>%所有 ip 都可以连接*.* MySQL 上的所有库中的所有表。</h2><h2 id="mysqld-–initialized-insecure：初始化-MySQL，并且默认密码为空；"><a href="#mysqld-–initialized-insecure：初始化-MySQL，并且默认密码为空；" class="headerlink" title="mysqld –initialized -insecure：初始化 MySQL，并且默认密码为空；"></a>mysqld –initialized -insecure：初始化 MySQL，并且默认密码为空；</h2><h2 id="mysqld-–initialized-–console：初始化-MySQL；"><a href="#mysqld-–initialized-–console：初始化-MySQL；" class="headerlink" title="mysqld –initialized –console：初始化 MySQL；"></a>mysqld –initialized –console：初始化 MySQL；</h2><h2 id="alter-user-‘root‘-’localhost’identified-by-‘密码’-：修改管理员用户的密码；"><a href="#alter-user-‘root‘-’localhost’identified-by-‘密码’-：修改管理员用户的密码；" class="headerlink" title="alter user ‘root‘@’localhost’identified by ‘密码’;：修改管理员用户的密码；"></a>alter user ‘root‘@’localhost’identified by ‘密码’;：修改管理员用户的密码；</h2><h2 id="-紧急错误检测："><a href="#-紧急错误检测：" class="headerlink" title=" 紧急错误检测："></a> 紧急错误检测：</h2><h2 id="mysqld-–console：查看日志"><a href="#mysqld-–console：查看日志" class="headerlink" title="mysqld –console：查看日志"></a>mysqld –console：查看日志</h2><h2 id="netstat-aon-findstr-“3306”：查看-3306-端口使用情况"><a href="#netstat-aon-findstr-“3306”：查看-3306-端口使用情况" class="headerlink" title="netstat -aon|findstr “3306”：查看 3306 端口使用情况"></a>netstat -aon|findstr “3306”：查看 3306 端口使用情况</h2><h2 id="taskkill-f-pid-4912：强制中止端口（PID-号）进程"><a href="#taskkill-f-pid-4912：强制中止端口（PID-号）进程" class="headerlink" title="taskkill/f /pid 4912：强制中止端口（PID 号）进程"></a>taskkill/f /pid 4912：强制中止端口（PID 号）进程</h2><h2 id="-补充："><a href="#-补充：" class="headerlink" title=" 补充："></a> 补充：</h2><h2 id="regedit：注册表"><a href="#regedit：注册表" class="headerlink" title="regedit：注册表"></a>regedit：注册表</h2><h2 id="netstat-ano-找到本地地址为-0-0-0-0-3306-的地址-记住其-PID-的值"><a href="#netstat-ano-找到本地地址为-0-0-0-0-3306-的地址-记住其-PID-的值" class="headerlink" title="netstat -ano 找到本地地址为 0.0.0.0:3306 的地址 记住其 PID 的值"></a>netstat -ano 找到本地地址为 0.0.0.0:3306 的地址 记住其 PID 的值</h2>]]></content>
       
       
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
       
     </entry>
     
@@ -21,9 +58,21 @@
       <link href="/2022/11/25/2022-11-25-01%E6%96%87%E7%AB%A0/"/>
       <url>/2022/11/25/2022-11-25-01%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<h2 id="你好0001"><a href="#你好0001" class="headerlink" title="你好0001"></a>你好0001</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="你好-0001"><a href="#你好-0001" class="headerlink" title="你好 0001"></a>你好 0001</h2>]]></content>
       
       
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+        </tags>
       
     </entry>
     
