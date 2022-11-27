@@ -4,6 +4,63 @@
   
     
     <entry>
+      <title>生活</title>
+      <link href="/2022/11/27/2022-11-27-%E7%AC%AC%E5%85%AD%E7%AF%87/"/>
+      <url>/2022/11/27/2022-11-27-%E7%AC%AC%E5%85%AD%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[<h2 id="你好-004"><a href="#你好-004" class="headerlink" title="你好 004"></a>你好 004</h2><div name="我是墙" id="recent-posts">text_color: black # 文字默认颜色text_hover_color: white # 文字鼠标悬浮颜色background_color: "#f2f2f2" # 文字背景默认颜色background_hover_color: "#b30070" # 文字背景悬浮颜色  <!-- id=>type  recent-posts=>name    -->  <div name="我是画框">    <div name="我是纸">      <!--这里通过js挂载magnet，也就是画画-->    </div>  </div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据结构</title>
+      <link href="/2022/11/27/2022-11-27-%E7%AC%AC%E4%BA%94%E7%AF%87/"/>
+      <url>/2022/11/27/2022-11-27-%E7%AC%AC%E4%BA%94%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[<h2 id="你好-004"><a href="#你好-004" class="headerlink" title="你好 004"></a>你好 004</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据结构 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随想</title>
+      <link href="/2022/11/27/2022-11-27-%E7%AC%AC%E5%9B%9B%E7%AF%87/"/>
+      <url>/2022/11/27/2022-11-27-%E7%AC%AC%E5%9B%9B%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[<h2 id="你好-005"><a href="#你好-005" class="headerlink" title="你好 005"></a>你好 005</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean; hexo s</span><br><span class="line">hexo clean; hexo g; hexo d</span><br><span class="line">git add .; git commit -m &quot;npm publish&quot;; npm version patch;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随想 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法自带格式</title>
       <link href="/2022/11/26/2022-11-26-%E7%AC%AC%E4%B8%89%E7%AF%87/"/>
       <url>/2022/11/26/2022-11-26-%E7%AC%AC%E4%B8%89%E7%AF%87/</url>
@@ -63,14 +120,14 @@
       
       <categories>
           
-          <category> c++ </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> c++ </tag>
+            <tag> hexo </tag>
             
         </tags>
       
