@@ -90,6 +90,84 @@
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite !important;
 }
+/* 侧边公告栏 */
+#aside-content>.card-widget.card-announcement {
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+/* 侧边公告栏 */
+/* #aside-content>.sticky_layout {
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+} */
+/* 侧边电子时钟栏 */
+#aside-content>.sticky_layout>.card-widget.card-clock{
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+
+/* 侧边归档栏 */
+#aside-content>.sticky_layout>.card-widget.card-archives {
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+
+/* 侧边网站咨询栏 */
+#aside-content>.sticky_layout>.card-widget.card-webinfo{
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+
 
 @-webkit-keyframes Gradient {
   0% {
@@ -135,6 +213,22 @@
 
 /* 黑夜模式适配 */
 [data-theme="dark"] #aside-content>.card-widget.card-info {
+  background: #191919ee;
+}
+/* 侧边公告栏黑夜模式适配 */
+[data-theme="dark"] #aside-content>.card-widget.card-announcement {
+  background: #191919ee;
+}
+/* 侧边时钟栏黑夜模式适配 */
+[data-theme="dark"] #aside-content>.sticky_layout>.card-widget.card-clock {
+  background: #191919ee;
+}
+/* 侧边归档栏黑夜模式适配 */
+[data-theme="dark"] #aside-content>.sticky_layout>.card-widget.card-archive {
+  background: #191919ee;
+}
+/* 侧边网站咨询栏黑夜模式适配 */
+[data-theme="dark"] #aside-content>.sticky_layout>.card-widget.card-webinfo {
   background: #191919ee;
 }
 
@@ -184,12 +278,11 @@
 }
 
 
-
+/* 首页文章卡片 */
 :root {
   /* --trans-light: rgba(255, 255, 255, 0.88); */
-  --trans-light: rgba(255, 255, 255, 0.88);
-  
-  --trans-dark: rgba(25, 25, 25, 0.814);
+  --trans-light: rgba(255, 255, 255, 0.938);
+  --trans-dark: rgba(25, 25, 25, 0.916);
   --border-style: 1px solid rgb(169, 169, 169);
   --backdrop-filter: blur(5px) saturate(150%);
 }
@@ -396,6 +489,28 @@ h6::before {
 
 /* 小冰分类分类磁铁黑夜模式适配 */
 /* 一般状态 */
+#catalog_magnet {
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%; 
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+/* #catalog_magnet {
+  background: #3ecdf1e5;
+
+} */
+[data-theme="dark"] #catalog_magnet {
+  background: #191919ee;
+ 
+}
 [data-theme="dark"] .magnet_link_context {
   background: #1e1e1e;
   color: antiquewhite;
