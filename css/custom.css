@@ -224,7 +224,9 @@
   background: #191919ee;
 }
 /* 侧边归档栏黑夜模式适配 */
-[data-theme="dark"] #aside-content>.sticky_layout>.card-widget.card-archive {
+[data-theme="dark"]  #aside-content>.sticky_layout>.card-widget.card-archives {
+ 
+  
   background: #191919ee;
 }
 /* 侧边网站咨询栏黑夜模式适配 */
