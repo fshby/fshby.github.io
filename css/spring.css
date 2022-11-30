@@ -16,7 +16,7 @@
 }
 
 .chunjiepic {
-    margin-left: 40%;
+    
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -355,7 +355,7 @@ body.themespring .denglong {
 }
 
 .deng:before {
-    position: absolute;
+    position:absolute;
     top: -7px;
     left: 29px;
     height: 12px;
