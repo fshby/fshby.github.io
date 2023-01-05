@@ -1,3 +1,33 @@
+
+// 防抖全局计时器
+let TT = null;    //time用来控制事件的触发
+// 防抖函数:fn->逻辑 time->防抖时间
+function debounce(fn, time) {
+    if (TT !== null) clearTimeout(TT);
+    TT = setTimeout(fn, time);
+}
+
+// 弹窗
+// 复制提醒
+document.addEventListener("copy", function () {
+    debounce(function () {
+        new Vue({
+            data: function () {
+                this.$notify({
+                    title: "哎嘿！复制成功🍬",
+                    message: "若要转载最好保留原文链接哦，给你一个大大的赞！",
+                    position: 'top-left',
+                    offset: 50,
+                    showClose: true,
+                    type: "success",
+                    duration: 5000
+                });
+            }
+        })
+    }, 300);
+})
+
+// 右侧滚动雪人挂件
 if (document.body.clientWidth > 992) {
     function getBasicInfo() {
         /* 窗口高度 */
@@ -34,8 +64,8 @@ if (document.body.clientWidth > 992) {
                 borderRadius: 5 + 'px',
                 right: 60 + 'px',
                 // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图
-                nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",
-                hoverMsg: "喵喵喵~",
+                nekoImg: "/img/雪人.png",
+                hoverMsg: "下雪了!",
                 color: "#6f42c1",
                 during: 500,
                 blog_body: "body",
@@ -145,3 +175,4 @@ if (document.body.clientWidth > 992) {
         */
     })
 }
+
