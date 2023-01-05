@@ -65,7 +65,7 @@ if (document.body.clientWidth > 992) {
                 right: 60 + 'px',
                 // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图
                 nekoImg: "/img/雪人.png",
-                hoverMsg: "下雪了!",
+                hoverMsg: "下雪啦~",
                 color: "#6f42c1",
                 during: 500,
                 blog_body: "body",
