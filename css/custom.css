@@ -188,13 +188,15 @@ html{
     box-shadow: 0px 0px 1px 1px #39c5bb;
   }
 }
+
+
 /* 首页文章卡片 */
-#recent-posts>.recent-post-item {
+/* 可以使卡片颜色变深 */
+/* #recent-posts>.recent-post-item {
   background: var(--trans-light);
-  /* backdrop-filter: var(--backdrop-filter); */
   border-radius: 25px;
   border: var(--border-style);
-}
+} */
 
 /* 首页侧栏卡片 */
 #aside-content .card-widget {
@@ -559,6 +561,21 @@ div#archive {
 /* 小冰分类分类磁铁黑夜模式适配 */
 /* 一般状态 */
 #catalog_magnet {
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
+  box-shadow: 0 0 5px rgb(66, 68, 68);
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+/* 滚动文章栏 */
+div#swiper_container.blog-slider.swiper-container-fade.swiper-container-horizontal {
   background: linear-gradient(-45deg,
       #e8d8b9,
       #eccec5,
