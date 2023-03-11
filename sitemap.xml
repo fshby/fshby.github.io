@@ -248,7 +248,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/%E4%B8%83%E7%89%9B%E4%BA%91/</loc>
+    <loc>http://fshby.cc/tags/Windows%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2023-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://fshby.cc/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -262,7 +269,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://fshby.cc/tags/%E4%B8%83%E7%89%9B%E4%BA%91/</loc>
+    <lastmod>2023-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://fshby.cc/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -282,31 +296,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://fshby.cc/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://fshby.cc/tags/Windows%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2023-03-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>http://fshby.cc/categories/mysql/</loc>
+    <loc>http://fshby.cc/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://fshby.cc/categories/mysql/</loc>
     <lastmod>2023-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -341,14 +341,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/java/</loc>
+    <loc>http://fshby.cc/categories/c/</loc>
     <lastmod>2023-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/c/</loc>
+    <loc>http://fshby.cc/categories/java/</loc>
     <lastmod>2023-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
