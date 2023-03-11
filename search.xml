@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>常见Error处理与处理办法</title>
+      <link href="/posts/64207f9c.html"/>
+      <url>/posts/64207f9c.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo-deply问题"><a href="#hexo-deply问题" class="headerlink" title="hexo deply问题"></a>hexo deply问题</h2><p>针对此方面问题首先确定是否是因为github或者Vercel被墙了,使用电脑cmd命令ping一下网站，如果没有问题继续下面步骤：</p><p>终端提示：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (E:\hexo-zkf2.0\Hexo-zkf-2.0\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:527:28)</span><br><span class="line">      at ChildProcess.cp.emit (E:\hexo-zkf2.0\Hexo-zkf-2.0\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/trouble</span><br><span class="line">shooting.html</span><br></pre></td></tr></table></figure><br>解决办法:<br>出现这种错误，可能是.deploy_git文件出现变动或者误删改造成的，可以采用如下解决办法：<br><a href="https://blog.csdn.net/qq_28919533/article/details/124338891">参考文献</a></p><ol><li>进入hexo根目</li><li>直接暴力删除 .deploy_git和public文件</li><li>暴力三连 hexo c  hexo g  hexo d</li></ol><div class="tip warning"><p>提示:部分地区可能由于使用5G网络原因造成错误，建议更滑网络重新三连</p></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Error </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows技巧</title>
       <link href="/posts/761adea4.html"/>
       <url>/posts/761adea4.html</url>
