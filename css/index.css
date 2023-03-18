@@ -2733,6 +2733,7 @@ figure.highlight pre .javascript .function {
 @media screen and (min-width: 1069px) {
   .recent-posts .recent-post-item {
     width: 32.3%;
+    height: 32.3%;
     margin: 0px 1% 20px 0px;
   }
   .recent-posts .recent-post-item .recent-post-content .recent-post-info .article-title {

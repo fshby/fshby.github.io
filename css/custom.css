@@ -237,7 +237,7 @@ svg.social_icon {
 }
 
 [data-theme="light"] #fps {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.888);
   backdrop-filter: var(--backdrop-filter);
   padding: 4px;
   border-radius: 4px;
@@ -318,7 +318,7 @@ svg.social_icon {
 div#post,
 div#page,
 div#archive {
-  background: var(--trans-light);
+  /* background: var(--trans-light); */
   /* backdrop-filter: var(--backdrop-filter); */
   border: var(--border-style);
   border-radius: 20px;
@@ -362,63 +362,7 @@ div#archive {
   background: rgba(25, 25, 25, 0.9) !important;
   color: #ffffff;
 }
-/* 信息卡片背景图 */
-/* 文章背景色 */
-/* [data-theme="light"] div#post {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
 
-[data-theme="dark"] div#post {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="light"] div#page {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-[data-theme="dark"] div#page {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-} */
-[data-theme="light"] div#archive {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-[data-theme="dark"] div#archive{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-/* 导航栏*/
-[data-theme="light"] #page-header.nav-fixed #nav {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-
-[data-theme="dark"] #page-header.nav-fixed #nav {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content>.card-widget.card-info {
   background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
@@ -434,233 +378,10 @@ div#archive {
   background-attachment: inherit;
   background-size: 100%;
 }
-/* 滚动章栏 */
-[data-theme="light"] div#swiper_container.blog-slider.swiper-container-fade.swiper-container-horizontal {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="dark"] div#swiper_container.blog-slider.swiper-container-fade.swiper-container-horizontal {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-/* 文章卡片*/
-[data-theme="light"] div.recent-post-content.right {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="light"] div.recent-post-content.left {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-
-[data-theme="dark"] div.recent-post-content.right{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="dark"] div.recent-post-content.left{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-/* 侧边公告栏 */
-[data-theme="light"] #aside-content>.card-widget.card-announcement {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-[data-theme="dark"] #aside-content>.card-widget.card-announcement {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-/*侧边网站咨询栏*/
-[data-theme="light"] #aside-content>.sticky_layout>.card-widget.card-webinfo{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-[data-theme="dark"] #aside-content>.sticky_layout>.card-widget.card-webinfo {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-/*最新评论栏*/
-[data-theme="light"] #aside-content>.sticky_layout>.card-widget{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-
-[data-theme="dark"] #aside-content>.sticky_layout>.card-widget {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-/*分类磁铁*/
-[data-theme="light"] #catalog_magnet{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-[data-theme="dark"] #catalog_magnet {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-/*分类选项*/
-[data-theme="light"] .magnet_item{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  border-radius: 30px 30px 30px 30px ;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="light"] .magnet_link_context{
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  border-radius: 30px 30px 30px 30px ;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-[data-theme="dark"] .magnet_item {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  border-radius: 30px 30px 30px 30px;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="dark"] .magnet_link_context {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  border-radius: 30px 30px 30px 30px;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-
-
-/* 
-/* 侧边栏个人信息卡片动态渐变色 */
-#aside-content>.card-widget.card-info {
-  background: linear-gradient(-45deg,
-      #e8d8b9,
-      #eccec5,
-      #a3e9eb,
-      #bdbdf0,
-      #eec1ea);
-  box-shadow: 0 0 5px rgb(66, 68, 68);
-  position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite !important;
-}
-
-
-/* 侧边归档栏 */
-/* #aside-content>.sticky_layout>.card-widget.card-archives {
-  background: linear-gradient(-45deg,
-      #e8d8b9,
-      #eccec5,
-      #a3e9eb,
-      #bdbdf0,
-      #eec1ea);
-  box-shadow: 0 0 5px rgb(66, 68, 68);
-  position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite !important;
-} */
-
-/* 侧边网站咨询栏 */
-#aside-content>.sticky_layout>.card-widget.card-webinfo {
-  background: linear-gradient(-45deg,
-      #e8d8b9,
-      #eccec5,
-      #a3e9eb,
-      #bdbdf0,
-      #eec1ea);
-  box-shadow: 0 0 5px rgb(66, 68, 68);
-  position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite !important;
-}
-
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
 
 /* 个人信息Follow me按钮 */
 #aside-content>.card-widget.card-info>#card-info-btn {
-  background-color: #3eb8be;
+  background-color:#39c5bce0;
   border-radius: 8px;
 }
 
@@ -668,36 +389,40 @@ div#archive {
 
 /* 小冰分类分类磁铁黑夜模式适配 */
 /* 一般状态 */
+
+
 #catalog_magnet {
-  background: linear-gradient(-45deg,
-      #e8d8b9,
-      #eccec5,
-      #a3e9eb,
-      #bdbdf0,
-      #eec1ea);
-  box-shadow: 0 0 5px rgb(66, 68, 68);
-  position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite !important;
+  background: var(--trans-light);
+
+} 
+[data-theme="dark"] #catalog_magnet {
+  background: var(--trans-dark);
+
 }
 
-/* #catalog_magnet {
-  background: #3ecdf1e5;
-
-} */
-/* 
 [data-theme="dark"] .magnet_link_context {
-  background: #1e1e1e;
+  background: #190202d7;
   color: antiquewhite;
-} */
+}
 
-/* 鼠标悬浮状态 */
-/* [data-theme="dark"] .magnet_link_context:hover {
+/* 鼠标悬浮状态 */ 
+[data-theme="dark"] .magnet_link_context:hover {
   background: #3ecdf1;
   color: #f2f2f2;
-} */
+  border-radius: 5px 5px 5px 5px;
+} 
+[data-theme="light"] .magnet_link_context {
+  background:#3e404018;
+  color: rgba(13, 13, 12, 0.941);
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* 鼠标悬浮状态 */ 
+[data-theme="light"] .magnet_link_context:hover {
+  background:#39c5bcd9;
+  color:rgba(13, 13, 12, 0.941);
+  border-radius: 5px 5px 5px 5px;
+} 
 
 
 
@@ -706,8 +431,15 @@ div#archive {
 
 /* 宽屏适配 */
 /* 全局宽度 */
+/* div#recent-posts.recent-posts{
+  width: 75%;
+}
+div#aside-content.aside-content{
+  width: 80%;
+} */
 .layout {
-  max-width: 1400px;
+  /* min-width: 1080px;*/
+  max-width: 1400px; 
 }
 
 /* 侧边卡片栏宽度 */
