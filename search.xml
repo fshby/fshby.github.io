@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CDN内容分发网络</title>
+      <link href="/posts/912c4bbc.html"/>
+      <url>/posts/912c4bbc.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="免费CDN"><a href="#免费CDN" class="headerlink" title="免费CDN"></a>免费CDN</h1><p>CDN（内容分发网络）是一种在全球各地部署服务器，通过就近访问提高网站或应用程序的速度和可靠性的技术。然而，大多数CDN服务都需要付费。</p><p>不过，也有一些提供免费CDN服务的供应商。以下是一些免费CDN服务的例子：</p><ul><li>Cloudflare：Cloudflare是一个免费的CDN供应商，可以加速您的网站并提供安全性和防御攻击的功能。</li><li>jsDelivr：jsDelivr是一个免费的开源CDN供应商，提供JavaScript、CSS、图像和其他文件的分发服务。</li><li>BootstrapCDN：BootstrapCDN是一个免费的CDN供应商，提供Bootstrap和Font Awesome等前端框架和图标的分发服务。</li><li>CoralCDN：CoralCDN是一个免费的开源CDN供应商，旨在提高动态Web内容的可用性。</li></ul><p>这些免费CDN供应商可能不如付费的CDN服务提供商那样强大或灵活，但是它们可以提供一定程度的加速和性能提升，特别是对于小型网站或项目。</p><h1 id="Cloudflare与jsDelivr的区别"><a href="#Cloudflare与jsDelivr的区别" class="headerlink" title="Cloudflare与jsDelivr的区别"></a>Cloudflare与jsDelivr的区别</h1><p>Cloudflare和jsDelivr都是免费的CDN供应商，但它们在一些方面存在一些区别。</p><ol><li>功能<br>Cloudflare提供比jsDelivr更广泛的功能，包括防止DDoS攻击、SSL证书、安全防护等。jsDelivr的功能主要是提供JavaScript、CSS、图像和其他文件的分发服务，但是它也提供了一些附加功能，如版本控制和压缩。</li><li>性能<br>Cloudflare的全球网络更加庞大，能够提供更广泛的覆盖范围和更快的加载速度。然而，jsDelivr也拥有相当快的加载速度，并且其开源软件支持跨国边缘缓存，能够更好地支持某些特定的项目。</li><li>用户界面<br>Cloudflare提供一个复杂的仪表板，可以自定义各种设置，包括缓存规则、防火墙规则等等。jsDelivr则提供了一个简单的界面，更适合于小型网站和个人项目。</li><li>支持<br>Cloudflare提供广泛的支持，包括在线帮助中心、社区支持和专业支持服务。jsDelivr则主要通过GitHub仓库和开发者社区提供支持。<br>总的来说，Cloudflare和jsDelivr都是出色的免费CDN供应商，但它们的功能和重点略有不同。如果您需要更广泛的功能和更好的支持，Cloudflare可能是更好</li></ol><h1 id="使用jsDelivr的全部步骤及示例代码："><a href="#使用jsDelivr的全部步骤及示例代码：" class="headerlink" title="使用jsDelivr的全部步骤及示例代码："></a>使用jsDelivr的全部步骤及示例代码：</h1><ol><li><p>选择需要托管的文件。</p></li><li><p>在HTML文档中添加jsDelivr的链接。将您要托管的文件的链接替换为jsDelivr提供的链接，这样就可以从CDN中加载这些文件。例如，如果您要使用jQuery，您可以将以下代码添加到您的HTML文档中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></li><li><p>确定要使用的版本。jsDelivr提供了很多不同的版本和CDN链接。您可以在jsDelivr的网站上找到特定版本的链接，也可以使用@latest关键字来自动加载最新版本的文件。</p></li><li><p>确定要使用的CDN。jsDelivr提供了多个CDN，以确保高可用性和性能。您可以使用cdn.jsdelivr.net或cdn.jsdelivr.com来访问jsDelivr的CDN。</p></li><li>部署您的网站或应用程序。一旦您完成了上述步骤，您就可以部署您的网站或应用程序，并使用jsDelivr提供的CDN来分发文件。您的文件现在将从jsDelivr的CDN中加载，从而提高了加载速度和性能。</li></ol><p>请注意，jsDelivr是一个开源项目，您可以通过其GitHub仓库获取更多信息并为其做出贡献</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CDN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>影刀RPA应用</title>
       <link href="/posts/5289c1ca.html"/>
       <url>/posts/5289c1ca.html</url>
