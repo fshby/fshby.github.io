@@ -300,13 +300,6 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/hexo/</loc>
-    <lastmod>2023-03-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://fshby.cc/tags/%E4%B8%83%E7%89%9B%E4%BA%91/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -314,7 +307,7 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/mysql/</loc>
+    <loc>http://fshby.cc/tags/hexo/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -335,7 +328,21 @@
   </url>
   
   <url>
+    <loc>http://fshby.cc/tags/mysql/</loc>
+    <lastmod>2023-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://fshby.cc/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://fshby.cc/tags/Windows%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -349,13 +356,6 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/RPA/</loc>
-    <lastmod>2023-03-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://fshby.cc/tags/post/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -363,7 +363,7 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/Windows%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://fshby.cc/tags/RPA/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -393,14 +393,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>http://fshby.cc/categories/%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/%E9%9A%8F%E6%83%B3/</loc>
+    <loc>http://fshby.cc/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
