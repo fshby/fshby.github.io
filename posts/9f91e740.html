@@ -1,0 +1,606 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>前端知识归纳 | 浮生何必言</title><meta name="author" content="fshby"><meta name="copyright" content="fshby"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="HTTP&#x2F;HTML&#x2F;浏览器、CSS、JavaScript、Ajax、Vue、Reat、Agular">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端知识归纳">
+<meta property="og:url" content="http://fshby.cc/posts/9f91e740.html">
+<meta property="og:site_name" content="浮生何必言">
+<meta property="og:description" content="HTTP&#x2F;HTML&#x2F;浏览器、CSS、JavaScript、Ajax、Vue、Reat、Agular">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fshby.top/bg/bg01.jpg">
+<meta property="article:published_time" content="2023-04-05T01:23:56.000Z">
+<meta property="article:modified_time" content="2023-04-06T00:42:17.251Z">
+<meta property="article:author" content="fshby">
+<meta property="article:tag" content="前端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fshby.top/bg/bg01.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://fshby.cc/posts/9f91e740"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: fshby","link":"链接: ","source":"来源: 浮生何必言","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2.1.2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '前端知识归纳',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-06 08:42:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/dark.css"><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css" ><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_2.css" ><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="//at.alicdn.com/t/c/font_3856507_z6q14v2kjv.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><link rel="stylesheet" href="/js/custom_slty.css""><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><div id="myscoll"></div><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body>
+    <div id='loader'>
+        
+            <div class="outer_box">
+                <div class='loader_overlay'></div>
+                <div class='loader_cogs'>
+                    <div class='loader_cogs__top'>
+                        <div class='top_part'></div>
+                        <div class='top_part'></div>
+                        <div class='top_part'></div>
+                        <div class='top_hole'></div>
+                    </div>
+                    <div class='loader_cogs__left'>
+                        <div class='left_part'></div>
+                        <div class='left_part'></div>
+                        <div class='left_part'></div>
+                        <div class='left_hole'></div>
+                    </div>
+                    <div class='loader_cogs__bottom'>
+                        <div class='bottom_part'></div>
+                        <div class='bottom_part'></div>
+                        <div class='bottom_part'></div>
+                        <div class='bottom_hole'></div>
+                    </div>
+                    <p style="text-align:center">&nbsp;&nbsp;&nbsp;loading...</p>
+                </div>
+            </div>
+            
+    </div>
+
+    <script>
+        var endLoading = function () {
+            document.body.style.overflow = 'auto';
+            document.getElementById('loader').classList.add("loading");
+        }
+        window.addEventListener('load', endLoading);
+    </script>
+    <div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/%E7%A2%9F%E5%A5%B3.jpg" onerror="onerror=null;src='https://fshby.top/bg/bg12.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon--home"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-post"></use></svg><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-guidangfanweitongji">                   </use></svg><span> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-SEOTAGS">                   </use></svg><span> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-fenlei">                   </use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:randomPost();"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-suijichouyang">                   </use></svg><span> 随便逛逛</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-videocamera"></use></svg><span> 放映</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yinlehe">                   </use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dianyingpiao">                   </use></svg><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lianjie1"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-guanyu"></use></svg><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-aixinhua">                   </use></svg><span> 旧时光</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-xiongmao">                   </use></svg><span> 本站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-liuyanban">                   </use></svg><span> 留言板</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">浮生何必言</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="iconfont1  icon-sousuo"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon--home"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-post"></use></svg><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-guidangfanweitongji">                   </use></svg><span> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-SEOTAGS">                   </use></svg><span> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-fenlei">                   </use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:randomPost();"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-suijichouyang">                   </use></svg><span> 随便逛逛</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-videocamera"></use></svg><span> 放映</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yinlehe">                   </use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dianyingpiao">                   </use></svg><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lianjie1"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-guanyu"></use></svg><span> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-aixinhua">                   </use></svg><span> 旧时光</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-xiongmao">                   </use></svg><span> 本站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-liuyanban">                   </use></svg><span> 留言板</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div><div id="randomPost"><a class="site-page social-icon search" href="javascript:;" onclick="randomPost()" title="随机访问一篇文章"><i class="iconfont1 icon-suijichouyang"></i></a><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a></div></nav><div id="post-info"><h1 class="post-title">前端知识归纳</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-05T01:23:56.000Z" title="发表于 2023-04-05 09:23:56">2023-04-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-06T00:42:17.251Z" title="更新于 2023-04-06 08:42:17">2023-04-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="前端知识归纳"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前端基础"><a href="#前端基础" class="headerlink" title="前端基础"></a>前端基础</h2><h3 id="HTTP-HTML-浏览器"><a href="#HTTP-HTML-浏览器" class="headerlink" title="HTTP/HTML/浏览器"></a>HTTP/HTML/浏览器</h3><ol>
+<li><strong> http 和 https</strong><br>&ensp; &ensp; https 的 SSL 加密是在传输层实现的。<br>(1)http 和 https 的基本概念<br><strong>http:</strong> 超文本传输协议，是互联网上应用最为广泛的一种网络协议，是一个客户端和服务器端请求和应答的标准（TCP），用于从 WWW 服务器传输超文本到本地浏览器的传 输协议，它可以使浏览器更加高效，使网络传输减少。<br><strong>https:</strong> 是以安全为目标的 HTTP 通道，简单讲是 HTTP 的安全版，即 HTTP 下加入 SSL 层，HTTPS 的安全基础是 SSL，因此加密的详细内容就需要 SSL。<br><strong>https 协议的主要作用是</strong>：建立一个信息安全通道，来确保数组的传输，确保网站的真实性。<br><strong>https 协议的缺点：</strong> https 握手阶段比较费时，会使页面加载时间延长 50%，增加 10%~20%的耗电。 https 缓存不如 http 高效，会增加数据开销。 SSL 证书也需要钱，功能越强大的证书费用越高。 SSL 证书需要绑定 IP，不能再同一个 ip 上绑定多个域名，ipv4 资源支持不了这种消耗。 </li>
+<li><strong>tcp三次握手</strong><br><img width="300" height="250" alt="三次握手图" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://user-images.githubusercontent.com/17233651/42496289-1c6d668a-8458-11e8-98b3-65db50f64d48.png"><br>&ensp;&ensp;从图片可以得到三次握手可以简化为：C 发起请求连接 S 确认，S也发起连接 C 确认我们 再看看每次握手的作用：第一次握手：S 只可以确认 自己可以接受 C 发送的报文段第 二次握手：C 可以确认 S 收到了自己发送的报文段，并且可以确认 自己可以接受 S 发 送的报文段<strong>第三次握手：S 可以确认 C 收到了自己发送的报文段</strong></li>
+<li><strong> TCP 和 UDP 的区别</strong><br>（1）TCP 是面向连接的，udp 是无连接的即发送数据前不需要先建立链接。<br>（2）TCP 提供可靠的服务。也就是说，通过 TCP 连接传送的数据，无差错，不丢失， 不重复，且按序到达;UDP 尽最大努力交付，即不保证可靠交付。 并且因为 tcp 可靠， 面向连接，不会丢失数据因此适合大数据量的交换。<br>（3）TCP 是面向字节流，UDP 面向报文，并且网络出现拥塞不会使得发送速率降低（因 此会出现丢包，对实时的应用比如 IP 电话和视频会议等）。<br>（4）TCP 只能是 1 对 1 的，UDP 支持 1 对 1,1 对多。 m<br>（5）TCP 的首部较大为 20 字节，而 UDP 只有 8 字节。 （6）TCP 是面向连接的可靠性传输，而 UDP 是不可靠的。</li>
+<li><strong>HTTP 请求的方式，HEAD 方式</strong><br>head：类似于 get 请求，只不过返回的响应中没有具体的内容，用户获取报头 options：允许客户端查看服务器的性能，比如说服务器支持的请求方式等等。</li>
+<li><p><strong>一个图片 url 访问后直接下载怎样实现？</strong><br>请求的返回头里面，用于浏览器解析的重要参数就是 OSS 的 API 文档里面的返回 http 头，决定用户下载行为的参数。 </p>
+<blockquote>
+<p>下载的情况下：<br>1) x-oss-object-type: Normal<br>2)  x-oss-request-id: 598D5ED34F29D01FE2925F41<br>3)  x-oss-storage-class: Standard</p>
+</blockquote>
+</li>
+<li><p><strong>web Quality（无障碍）</strong><br>能够被残障人士使用的网站才能称得上一个易用的（易访问的）网站。 残障人士指的是那些带有残疾或者身体不健康的用户。 使用 alt 属性： &lt; img src=”person.jpg” alt=”this is a person”/ &gt; 有时候浏览器会无法显示图像。具体的原因有： 用户关闭了图像显示 浏览器是不支持图形显示的迷你浏览器 浏览器是语音浏览器（供盲人和弱视人群使用） <code>如果您使用了 alt 属性，那么浏览器至少可以显示或读出有关图像的描述。</code></p>
+</li>
+<li><strong>实用的 BOM 属性对象方法?</strong><br>什么是 Bom? Bom 是浏览器对象。有哪些常用的 Bom 属性呢？<br>(1)location 对象<br><em>location.href</em>— 返回或设置当前文档的 URL<br><em>location.search</em> — 返回 URL 中的查询字符串部分。<br>例 如 <a target="_blank" rel="noopener" href="http://www.dreamdu.com/dreamdu.php?id=5&amp;name=dreamdu">http://www.dreamdu.com/dreamdu.php?id=5&amp;name=dreamdu</a> 返回包括(?)后面的内 容?id=5&amp;name=dreamdu<br><em>location.hash</em> — 返回 URL#后面的内容，如果没有#，返回空<br><em>location.host</em> — 返回 URL 中的域名部分，例如 www.dreamdu.com <em>location.hostname</em> — 返回 URL 中的主域名部分，例如 dreamdu.com <em>location.pathname</em> — 返回 URL 的域名后的部分。例如 <a target="_blank" rel="noopener" href="http://www.dreamdu.com/xhtml/">http://www.dreamdu.com/xhtml/</a> 返 回/xhtml/<br><em>location.port</em> — 返回 URL 中的端口部分。例如 <a target="_blank" rel="noopener" href="http://www.dreamdu.com:8080/xhtml/">http://www.dreamdu.com:8080/xhtml/</a> 返回 8080<br><em>location.protocol</em> — 返回 URL 中的协议部分。<br>例如 <a target="_blank" rel="noopener" href="http://www.dreamdu.com:8080/xhtml/">http://www.dreamdu.com:8080/xhtml/</a> 返 回(//)前面的内容 http: location.assign — 设置当前文档的 URL<br><em>location.replace() </em>— 设置当前文档的 URL，并且在 history 对象的地址列表中移除这个 URL<br><em>location.replace(url); </em><br><em>location.reload() </em>— 重载当前页面<br>(2)history 对象<br><em>history.go()</em> — 前进或后退指定的页面数 history.go(num);<br><em>history.back()</em> — 后退一页<br><em>history.forward()</em> — 前进一页<br>(3)Navigator 对象<br><em>navigator.userAgent</em> — 返回用户代理头的字符串表示(就是包括浏览器版本信息等的字 符串)<br><em>navigator.cookieEnabled</em> — 返回浏览器是否支持(启用)cookie</li>
+<li><strong>HTML5 drag api</strong><br>dragstart：事件主体是被<code>拖放</code>元素，在<code>开始</code>拖放被拖放元素时触发，。<br>darg：事件主体是被<code>拖放</code>元素，在<code>正在</code>拖放被拖放元素时触发。<br>dragenter：事件主体是目标元素，在被拖放元素<code>进入</code>某元素时触发。<br>dragover：事件主体是目标元素，在被拖放在某元素内<code>移动</code>时触发。<br>dragleave：事件主体是目标元素，在被拖放元素<code>移出</code>目标元素是触发。<br>drop：事件主体是目标元素，在目标元素完全<code>接受</code>被拖放元素时触发。<br>dragend：事件主体是被拖放元素，在整个拖放操作<code>结束时</code>触发</li>
+<li><strong>http2.0</strong><br>&ensp;&ensp;提升访问速度（可以对于，请求资源所需时间更少，访问速度更快，相比 http1.0） 允许<code>多路复用</code>：多路复用允许同时通过单一的 HTTP/2 连接发送多重请求-响应信息。改 善了：在 http1.1 中，浏览器客户端在同一时间，针对同一域名下的请求有一定数量限 制（连接数量），超过限制会被阻塞。<br><code>二进制分帧</code>：HTTP2.0 会将所有的传输信息分割为更小的信息或者帧，并对他们进行二 进制编码 首部压缩 服务器端推送</li>
+<li><strong>400 和 401、403 状态码</strong><br>(1)400 状态码：<code>请求无效</code><br>产生原因:<br>前端提交数据的字段名称和字段类型与后台的实体<code>没有保持一致</code> 前端提交到后台的数据应该是 <code>json</code>字符串类型，但是前端没有将对象 JSON.stringify 转 化成字符串。<br><strong><code>解决方法：</code></strong> 对照字段的名称，保持一致性 将 obj 对象通过 JSON.stringify 实现<code>序列化</code><br>(2)401 状态码：当前请求需要<code>用户验证</code><br>(3)403 状态码：<code>服务器已经得到请求，但是拒绝执行</code><br>(4)404状态码是一种HTTP（超文本传输协议）状态码，表示客户端请求的资源在服务器上未找到</li>
+<li><strong>fetch 发送 2 次请求的原因</strong><br>&ensp;&ensp;fetch 发送 post 请求的时候，总是发送 2 次，第一次状态码是 <code>204</code>，第二次才成功？ 原因很简单，因为你用 fetch 的 post 请求的时候，导致 fetch 第一次发送了一个<code>Options</code>请求，询问服务器<code>是否支持</code>修改的请求头，如果服务器<code>支持</code>，则在第二次中发送真正的 请求。</li>
+<li><strong>Cookie、sessionStorage、localStorage 的区别</strong><br>共同点：<code>都是保存在浏览器端，并且是同源的</code><br>Cookie：cookie 数据始终在同源的 http 请求中携带（即使不需要），即 cookie 在浏览器 和服务器间来回传递。而 sessionStorage 和 localStorage 不会自动把数据发给服务器，仅 在本地保存。cookie 数据还有路径（path）的概念，可以限制 cookie 只属于某个路径下, 存储的大小很小只有<code>4K</code> 左右。 （<code>key：可以在浏览器和服务器端来回传递，存储容量 小，只有大约 4K 左右</code>）<br>sessionStorage：仅在当<code>前浏览器窗口关闭前有效</code>，自然也就不可能持久保持，localStorage： 始终有效，窗口或浏览器关闭也一直保存，因此用作<code>持久数据</code>；cookie 只在设置的 cookie 过期时间之前一直有效，即使窗口或浏览器关闭。（key：本身就是一个回话过程，关 闭浏览器后消失，session <code>为一个回话，当页面不同即使是同一页面打开两次，也被视为 同一次回话</code>）<br>localStorage：localStorage 在所有同<code>源窗口中都是共享的</code>；<br>cookie 也是在所有同源窗口中 都是共享的。（key：同源窗口都会共享，并且不会失效，不管窗口或者浏览器关闭与 否都会始终生效）<br>补充说明一下 cookie 的作用： 保存用户登录状态。例如将用户 id 存储于一个 cookie 内，这样当用户下次访问该页面 时就不需要重新登录了，现在很多论坛和社区都提供这样的功能。 cookie 还可以设置 过期时间，当超过时间期限后，cookie 就会自动消失。因此，系统往往可以提示用户保 持登录状态的时间：常见选项有一个月、三个 月、一年等。 跟踪用户行为。例如一个天气预报网站，能够根据用户选择的地区显示当地的天气情况。 如果每次都需要选择所在地是烦琐的，当利用了 cookie 后就会显得很人性化了，系统能 够记住上一次访问的地区，当下次再打开该页面时，它就会自动显示上次用户所在地区 的天气情况。因为一切都是在后 台完成，所以这样的页面就像为某个用户所定制的一样，使用起来非常方便定制页面。如果网站提供了换肤或更换布局的功能，那么可以使 用 cookie 来记录用户的选项，例如：背景色、分辨率等。当用户下次访问时，仍然可以 保存上一次访问的界面风格。</li>
+<li><strong> Doctype 作用?严格模式与混杂模式如何区分？它们有何意义?</strong><br>&ensp;&ensp;Doctype 声明于文档最前面，告诉浏览器以何种方式来<code>渲染页面</code>，这里有两种模式，<code>严 格模式和混杂模式</code>。 严格模式的排版和 JS 运作模式是 以该浏览器支持的<code>最高标准</code>运行。 <code>混杂模式</code>，向后兼容，模拟老式浏览器，防止浏览器无法<code>兼容页面</code>。</li>
+<li><strong>Cookie 如何防范 XSS 攻击</strong><br>&ensp;&ensp;XSS（跨站脚本攻击）是指攻击者在返回的 HTML 中嵌入 javascript 脚本，为了减轻这些 攻击，需要在 HTTP 头部配上，<br>set-cookie：<br><code>httponly</code>-这个属性可以防止 XSS,它会禁止 javascript 脚本来访问 cookie。 <code>secure</code>- 这个属性告诉浏览器仅在请求为 https 的时候发送 cookie。 结果应该是这样的：<strong>Set-Cookie=&lt; cookie-value &gt;</strong>…</li>
+<li><strong>click 在 ios 上有 300ms 延迟，原因及如何解决？</strong><br>(1)粗暴型，禁用缩放 <meta name="viewport" content="width=device-width, user-scalable=no"><br>(2)利用 FastClick，其原理是： 检测到 touchend 事件后，立刻出发模拟 click 事件，并且把浏览器 300 毫秒之后真正出 发的事件给阻断掉</li>
+<li><strong> addEventListener 参数</strong><br>addEventListener(event, function, useCapture)<br>其中，event 指定事件名；function 指定要事件触发时执行的函数；useCapture 指定事件 是否在捕获或冒泡阶段执行。</li>
+<li><strong>强缓存、协商缓存什么时候用哪个</strong><br>&ensp;&ensp;因为服务器上的资源不是一直固定不变的，大多数情况下它会更新，这个时候如果我们 还访问本地缓存，那么对用户来说，那就相当于资源没有更新，用户看到的还是旧的资 源；所以我们希望服务器上的资源更新了浏览器就请求新的资源，没有更新就使用本地 的缓存，以最大程度的减少因网络请求而产生的资源浪费。</li>
+<li><strong>前端优化</strong><br><code>降低请求量</code>：合并资源，减少 HTTP 请求数，minify / gzip 压缩，webP，lazyLoad。<br><code>加快请求速度</code>：预解析 DNS，减少域名数，并行加载，CDN 分发。<br><code>缓存</code>：HTTP 协议缓存请求，离线缓存 manifest，离线数据缓存 localStorage。<br><code>渲染</code>：JS/CSS 优化，加载顺序，服务端渲染，pipeline。</li>
+<li><strong>HTTP 支持的方法</strong><br>GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE,</li>
+<li><strong>如何画一个三角形</strong><br>三角形原理：边框的均分原理 </li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">0px</span>; </span><br><span class="line"><span class="attribute">height</span>:<span class="number">0px</span>; </span><br><span class="line"><span class="attribute">border-top</span>:<span class="number">10px</span> solid red; </span><br><span class="line"><span class="attribute">border-right</span>:<span class="number">10px</span> solid transparent; </span><br><span class="line"><span class="attribute">border-bottom</span>:<span class="number">10px</span> solid transparent; </span><br><span class="line"><span class="attribute">border-left</span>:<span class="number">10px</span> solid transparent; &#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><strong> HTML5 新增的元素</strong><br>&ensp;&ensp;首先 html5 为了更好的实践 web 语义化，增加了 <code>header，footer，nav,aside,section</code> 等语义 化标签，在表单方面，为了<code>增强表单</code>，为 input 增加了 <code>color，emial,data ,range</code> 等类型， 在存储方面，提供了 <code>sessionStorage，localStorage,和离线存储</code>，通过这些存储方式方便数 据在客户端的存储和获取，在多媒体方面规定了音频和视频元素 <code>audio</code>和 <code>vedio</code>，另外还 有<code>地理定位</code>，<code>canvas 画布</code>，<code>拖放</code>，<code>多线程编程的 web worker</code> 和 <code>websocket</code>协议。</li>
+<li><strong>Cookie 和 Session 的认知，Cookie 有哪些限制？</strong><br>1) cookie 数据存放在客户的浏览器上，session 数据放在服务器上。<br>2) cookie 不是很安全，别人可以分析存放在本地的 COOKIE 并进行 COOKIE 欺骗 考虑到安全应当使用 session。<br>3) session 会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能 考虑到减轻服务器性能方面，应当使用 COOKIE。<br>4) 单个 cookie 保存的数据不能超过 4K，很多浏览器都限制一个站点最多保存 20 个 cookie。</li>
+</ol>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ol>
+<li><strong>css 盒模型</strong><br>简介：就是用来装页面上的元素的矩形区域。CSS 中的盒子模型包括 IE 盒子模型和标 准的 W3C 盒子模型。<br>box-sizing(有 3 个值哦)：border-box,padding-box,content-box. 标准盒子模型<br><img width="600" height="250" alt="W3C盒子模型" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://mp-0313a859-db6b-4395-bcc9-0e3941ca747b.cdn.bspapp.com/cloudstorage/2d3020b9-6c60-4d32-b3fb-1116087a4ed5.jpg"><br><img width="600" height="250" alt="IE盒子模型" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://mp-0313a859-db6b-4395-bcc9-0e3941ca747b.cdn.bspapp.com/cloudstorage/1be7efd3-d6a9-4043-8f7c-a54c5b785c45.png"><br><strong><code>区别：</code></strong>从图中我们可以看出，这两种盒子模型最主要的区别就是<code>width 的包含范围</code>，在 标准的盒子模型中，width 指 <code>content 部分的宽度</code>，在 IE 盒子模型中，width 表示 content+padding+border 这三个部分的宽度，故这使得在计算整个盒子的宽度时存在着差 异：<br>标准盒子模型的盒子宽度：左右 border+左右 padding+width<br>IE 盒子模型的盒子宽度：width<br>在 CSS3 中引入了 box-sizing 属性，box-sizing:content-box;表示标准的盒子模型box-sizing:border-box 表示的是 IE 盒子模型<br>&ensp;&ensp;最后，前面我们还提到了，box-sizing:padding-box,这个属性值的宽度包含了左右 padding+width 也很好理解性记忆，包含什么，width 就从什么开始算起。</li>
+<li><strong>画一条 0.5px 的线</strong><br>采用 meta viewport 的方式<br>&lt; meta name=”viewport” content=”initial-scale=1.0, maximum-scale=1.0, user-scalable=no” / &gt;<br>采用 border-image 的方式<br>采用 &lt; div style=”height: 1px; border-top: 0.5px solid red;”&gt;&lt; /div &gt;<br>采用 transform: scaleY(0.5);的方式</li>
+<li><strong>link 标签和 import 标签的区别</strong><br>link 属于 html 标签，而@import 是 css 提供的 页面被加载时，link 会<code>同时被加载</code>，而@import 引用的 css 会等到<code>页面加载结束后加载</code>。<br>link 是 html 标签，因此没有兼容性，而@import 只有 IE5 以上才能识别。 <code>link 方式样式的权重高于@import 的</code></li>
+<li><strong>Flex 布局</strong><br>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。 布局的传统解决方案，基于盒状模型，依赖 display 属性 + position 属性 + float 属性。它 对于<code>那些特殊布局非常不方便，比如，垂直居中就不容易实现</code>。 简单的分为容器属性和元素属性<br>容器的属性：<br><code>flex-direction</code>：决定主轴的方向（即子 item 的排列方法）<br>.box { flex-direction: row | row-reverse | column | column-reverse;<br>}<br><code>flex-wrap</code>：决定换行规则<br>.box{ flex-wrap: nowrap | wrap | wrap-reverse; }<br><code>flex-flow</code>：<br>.box { flex-flow: &lt; flex-direction&gt; || &lt; flex-wrap&gt;; }<code>justify-content</code>：对其方式，水平主轴对齐方式<br><code>align-items</code>：对齐方式，竖直轴线方向<br>项目的属性（元素的属性）：<br><code>order 属性</code>：定义项目的排列顺序，顺序越小，排列越靠前，默认为 0 <code>flex-grow 属性</code>：定义项目的放大比例，即使存在空间，也不会放大<br><code>flex-shrink 属性</code>：定义了项目的缩小比例，当空间不足的情况下会等比例的缩小，如果 定义个 item 的 flow-shrink 为 0，则为不缩小<br><code>flex-basis 属性</code>：定义了在分配多余的空间，项目占据的空间。<br><code>flex</code>：是 flex-grow 和 flex-shrink、flex-basis 的简写，默认值为 0 1 auto。<br><code>align-self</code>：允许单个项目与其他项目不一样的对齐方式，可以覆盖 <code>align-items</code>，默认属 性为 auto，表示继承父元素的 align-items 比如说，用 flex 实现圣杯布局</li>
+<li><strong>BFC（块级格式化上下文，用于清楚浮动，防止 margin 重叠等）</strong><br>&ensp;&ensp;直译成：<code>块级格式化上下文</code>，是一个<code>独立的渲染区域</code>，并且有一定的布局规则。 BFC 区域不会与 float box 重叠<br>BFC 是页面上的一个独立容器，子元素不会影响到外面<br>计算 BFC 的高度时，浮动元素也会参与计算 那些元素会生成 BFC：<br>根元素<br>float 不为 none 的元素<br>position 为 fixed 和 absolute 的元素<br>display 为 inline-block、table-cell、table-caption，flex，inline-flex 的元素<br>overflow 不为 visible 的元素</li>
+<li><strong>垂直居中的方法</strong><br>1) margin:auto 法 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> div&#123; </span><br><span class="line">    width: 400px; height: 400px; </span><br><span class="line">    position: relative; </span><br><span class="line">    border: 1px solid #465468; </span><br><span class="line">    &#125;</span><br><span class="line">    img&#123;</span><br><span class="line">         position: absolute; </span><br><span class="line">         margin: auto; top: 0; </span><br><span class="line">         left: 0; right: 0; </span><br><span class="line">         bottom: 0; </span><br><span class="line">         &#125;</span><br><span class="line"> &lt; div&gt;</span><br><span class="line">&lt; img src=&quot;mm.jpg&quot;&gt; </span><br><span class="line">&lt; /div&gt; 定位为上下左右为 0，margin：0 可以实现脱离文档流的居中</span><br></pre></td></tr></table></figure>
+2)margin 负值法<br>.container{<br> width: 500px; height: 400px;<br>  border: 2px solid #379;<br>   position: relative;<pre><code>&#125;
+.inner&#123; 
+ width: 480px; 
+ height: 380px; 
+ background-color: #746; 
+ position: absolute; 
+ top: 50%; left: 50%;
+  margin-top: -190px; /*height 的一半*/ 
+  margin-left: -240px; /*width 的一半*/ &#125;
+</code></pre>补充：其实这里也可以将 marin-top 和 margin-left 负值替换成， transform：translateX(-50%)和 transform：translateY(-50%)<br>3)table-cell（未脱离文档流的） 设置父元素的 display:table-cell,并且 vertical-align:middle，这样子元素可以实现垂直居中。 css: div{ width: 300px; height: 300px; border: 3px solid #555; display: table-cell; vertical-align: middle; text-align: center; }img{ vertical-align: middle; }<br>4)利用 flex 将父元素设置为 display:flex，并且设置 align-items:center;justify-content:center;<br>1css: 2.container{ 3width: 300px; 4height: 200px; 5border: 3px solid #546461; 6display: -webkit-flex; 7display: flex; 8-webkit-align-items: center; 9align-items: center; 10-webkit-justify-content: center; 11justify-content: center; 12} 13.inner{ 14border: 3px solid #458761; 15padding: 20px; 16}</li>
+<li><p><strong>使用CSS实现硬币翻转效果</strong>  </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">/* 硬币容器样式 */</span></span><br><span class="line"><span class="selector-class">.coin</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">perspective</span>: <span class="number">1000px</span>; <span class="comment">/* 透视距离 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 硬币正面样式 */</span></span><br><span class="line"><span class="selector-class">.front</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: gold;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 硬币背面样式 */</span></span><br><span class="line"><span class="selector-class">.back</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: silver;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(<span class="number">180deg</span>); <span class="comment">/* 初始为反面朝上 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 动画效果 */</span></span><br><span class="line"><span class="selector-class">.coin</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.front</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: flip-coin <span class="number">0.8s</span> forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> flip-coin &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(<span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">50%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(-<span class="number">90deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(-<span class="number">180deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.coin</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.back</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: flip-coin-back <span class="number">0.8s</span> forwards;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> flip-coin-back &#123;</span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(-<span class="number">180deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">50%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(-<span class="number">90deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(<span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>通过定义两个 @keyframes 规则分别 表示正面翻转和背面翻转的动画，使用 <code>transform: rotateY()</code> 来实现翻转的效果。<br>需要注意的是，在动画效果中，我们使用了 forwards 关键字，使得动画结束后保持最终状态。此外，为了避免鼠标快速移动时动画效果重复触发，我们可以使用 transition-delay 属性为鼠标悬停状态添加一个延迟效果。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;coin&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;front&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;back&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>em、deg和px都是在前端开发中常用的单位</strong><br>它们之间的区别如下：<br>1) px（像素）是一个<code>绝对单位</code>，它在所有设备上的显示效果相同。例如，10px 的文本在所有设备上看起来都是一样大小的。<br>2) em 是一个<code>相对单位</code>，它基于当前元素的字体大小进行计算。例如，如果一个元素的字体大小为16px，那么 1em 就等于16px。如果在一个元素内部设置字体大小为 0.5em，那么它的大小将会是当前元素字体大小的一半。<br>因此，em 和 px 的主要区别在于它们的大小计算方式不同。px 是一个绝对单位，而 em 是一个相对单位。在设置文本大小时，使用 em 可以让你的文本大小根据父元素的大小进行缩放，而不是在不同的设备上显示不同的大小。<br>1) deg是一个角度单位，用于表示旋转角度。在CSS中，它通常用于设置CSS3的旋转属性，如<code>transform: rotate(45deg)</code>。</p>
+</li>
+<li>画一个3D正方形<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.wrapper</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">width</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">float</span>: left;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.cube</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">font-size</span>: <span class="number">4em</span>;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">width</span>: <span class="number">2em</span>;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">margin</span>: <span class="number">1.5em</span> auto;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform-style</span>: preserve-<span class="number">3</span>d;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">rotateX</span>(-<span class="number">30deg</span>) <span class="built_in">rotateY</span>(<span class="number">32deg</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.side</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">width</span>: <span class="number">2em</span>;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">height</span>: <span class="number">2em</span>;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">99</span>, <span class="number">71</span>, <span class="number">0.6</span>);</span></span><br><span class="line"><span class="language-css">            <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.5</span>);</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: white;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">line-height</span>: <span class="number">2em</span>;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.front</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">translateZ</span>(<span class="number">1em</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.bottom</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">rotateX</span>(-<span class="number">90deg</span>) <span class="built_in">translateZ</span>(<span class="number">1em</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.top</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">90deg</span>) <span class="built_in">translateZ</span>(<span class="number">1em</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.left</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(-<span class="number">90deg</span>) <span class="built_in">translateZ</span>(<span class="number">1em</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">rotateY</span>(<span class="number">90deg</span>) <span class="built_in">translateZ</span>(<span class="number">1em</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-class">.back</span> &#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">transform</span>: <span class="built_in">translateZ</span>(-<span class="number">1em</span>);</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;wrapper w1&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;cube&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side front&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side back&quot;</span>&gt;</span>6<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side right&quot;</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side left&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side top&quot;</span>&gt;</span>5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side bottom&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;wrapper w2&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;cube&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side front&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side back&quot;</span>&gt;</span>6<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side right&quot;</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side left&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side top&quot;</span>&gt;</span>5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;side bottom&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>calc 属性</strong><br>Calc 用户动态计算长度值，任何长度值都可以使用 calc()函数计算，需要注意的是，运 算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；</li>
+<li><strong>隐藏页面中某个元素的方法</strong><br>display:none; visibility:hidden; opacity: 0; position 移到外部，z-index 涂层遮盖等等<br>1) visibility：hidden，该元素隐藏起来了，但不会改变页面布局，但是不会触发该元素已 经绑定的事件<br>2)  display：none，把元素隐藏起来，并且会改变页面布局，可以理解成在页面中把该元 素删除掉</li>
+<li><strong>line-height 和 height 的区别</strong><br>line-height 一般是指布局里面一段文字上下行之间的高度，是针对字体来设置的，height 一般是指容器的整体高度。</li>
+<li><strong>相对布局和绝对布局，position:relative 和 obsolute。</strong><br>相对定位 relative：<br>如果对一个元素进行相对定位，它将出现在它所在的位置上。然后，可以通过设置垂直 或水平位置，``。 在使用相对定位时，无论是 否进行移动，元素仍然占据原来的空间。因此，移动元素会导致它覆盖其它框。<br>绝对定位 absolute：<br>绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<html>。absolute 定位使元素的位置与文档流无关，因此不占据空间。 absolute 定位的元素和其他元素重叠。</li>
+<li>css 布局<br>六种布局方式总结：<br><code>圣杯布局、双飞翼布局、Flex 布局、绝对定位布局、表格布局、网 格布局</code>。<br>圣杯布局是指布局从上到下分为 header、container、footer，然后 container 部分定为三栏 布局。这种布局方式同样分为 header、container、footer。<br>圣杯布局的缺陷在于 center 是 在 container 的 padding 中的，因此宽度小的时候会出现混乱。<br>双飞翼布局给 center 部分包裹了一个 main 通过设置 margin 主动地把页面撑开。<br>Flex 布局是由 CSS3 提供的一种方便的布局方式。<br>绝对定位布局是给 container 设置 position: relative 和 overflow: hidden，因为绝对定位的元 素的参照物为第一个 postion 不为 static 的祖先元素。 left 向左浮动，right 向右浮动。 center 使用绝对定位，通过设置 left 和 right 并把两边撑开。 center 设置 top: 0 和 bottom: 0 使其高度撑开。 表格布局的好处是能使三栏的高度统一。 网格布局可能是最强大的布局方式了，使用起来极其方便，但目前而言，兼容性并不好。 网格布局，可以将页面分割成多个区域，或者用来定义内部元素的大小，位置，图层关 系</li>
+<li><strong>css 预处理器有什么</strong><br>less，sass 等</li>
+</ol>
+<h3 id="javaScript"><a href="#javaScript" class="headerlink" title="javaScript"></a>javaScript</h3><ol>
+<li><strong>闭包</strong><br>一句话可以概括：闭包就是能够读取其他函数内部变量的函数，或者子函数在外调用， 子函数所在的父函数的作用域不会被释放。</li>
+<li><strong>图片的懒加载和预加载</strong><br>预加载：提前加载图片，当用户需要查看时可直接从本地缓存中渲染。 懒加载：懒加载的主要目的是作为服务器前端的优化，减少请求数或延迟请求数。 两种技术的本质：两者的行为是相反的，一个是提前加载，一个是迟缓甚至不加载。 懒加载对服务器前端有一定的缓解压力作用，预加载则会增加服务器前端压力</li>
+<li><strong>JS 实现跨域</strong><br>JSONP：通过动态创建 script，再请求一个带参网址实现跨域通信。document.domain + iframe<br>跨域：两个页面都通过 js 强制设置 document.domain 为基础主域，就实现了同域。<br>location.hash + iframe 跨域：a 欲与 b 跨域相互通信，通过中间页 c 来实现。 三个页面， 不同域之间利用 iframe 的 location.hash 传值，相同域之间直接 js 访问来通信。 window.name + iframe跨域：通过iframe的src属性由外域转向本地域，跨域数据即由iframe 的 window.name 从外域传递到本地域。 postMessage 跨域：可以跨域操作的 window 属性之一。 CORS：服务端设置 Access-Control-Allow-Origin 即可，前端无须设置，若要带 cookie 请 求，前后端都需要设置。 代理跨域：启一个代理服务器，实现数据的转发</li>
+<li><strong>JS 基本数据类型</strong><br>基本数据类型：undefined、null、number、boolean、string、symbol</li>
+<li><strong>跨域的原理</strong><br>跨域，是指浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览 器对 JavaScript 实施的安全限制，那么只要协议、域名、端口有任何一个不同，都被当 作是不同的域。跨域原理，即是通过各种方式，避开浏览器的安全限制。</li>
+<li>写一个函数，第一秒打印 1，第二秒打印 2<br>两个方法，第一个是用 let 块级作用域<br>for(let i=0;i&lt;5;i++){<br>setTimeout(function(){<br> console.log(i)<br>  },1000*i)<br>  }<br>第二个方法闭包<br>for(var i=0;i&lt;5;i++){<br> (function(i){ <pre><code> setTimeout(function()&#123;
+</code></pre>console.log(i)<br>},1000*i) })(i)<br>}</li>
+</ol>
+<h2 id="前端核心"><a href="#前端核心" class="headerlink" title="前端核心"></a>前端核心</h2><h3 id="服务端编程"><a href="#服务端编程" class="headerlink" title="服务端编程"></a>服务端编程</h3><h3 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h3><h3 id="移动Web端"><a href="#移动Web端" class="headerlink" title="移动Web端"></a>移动Web端</h3><h2 id="前端进阶"><a href="#前端进阶" class="headerlink" title="前端进阶"></a>前端进阶</h2><h3 id="前端工程化"><a href="#前端工程化" class="headerlink" title="前端工程化"></a>前端工程化</h3><h3 id="Vue框架"><a href="#Vue框架" class="headerlink" title="Vue框架"></a>Vue框架</h3><h3 id="React框架"><a href="#React框架" class="headerlink" title="React框架"></a>React框架</h3><h3 id="Angular框架"><a href="#Angular框架" class="headerlink" title="Angular框架"></a>Angular框架</h3></article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>前端知识归纳</h></span></div><div class="post-copyriqght__type"><span class="post-copyright-info"><a href="http://fshby.cc/posts/9f91e740.html">http://fshby.cc/posts/9f91e740.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>fshby</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-04-05</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-04-06</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></div><div class="post_share"><div class="social-share" data-image="https://fshby.top/bg/bg01.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂作者</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay02.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay02.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><audio id="coinAudio" src="https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a"></audio><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/912c4bbc.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/小镇天空.jpg" onerror="onerror=null;src='https://fshby.top/bg/bg13.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CDN内容分发网络</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/%E7%A2%9F%E5%A5%B3.jpg" onerror="this.onerror=null;this.src='https://fshby.top/bg/bg12.jpg'" alt="avatar"/></div><div class="author-info__name">fshby</div><div class="author-info__description">有趣的文章！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>前往小家……<i class="faa-passing animated" style="padding-left:20px;display:inline-block;vertical-align:middle;"><svg class="icon" style="height:28px;width:28px;fill:currentColor;position:relative;top:5px"><use xlink:href="#icon-xiaoqiche"></use></svg></i></span></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="http://fshby.top/img/QQ.jpg" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="http://fshby.top/img/微信.jpg" target="_blank" title="微信"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-weixin1"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:1101139736@qq.com" target="_blank" title="邮箱"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-wodeyouxiang"></use></svg></a><a class="social-icon faa-parent animated-hover" href="http://fshby.top/" target="_blank" title="课表"><svg class="social_icon faa-tada" aria-hidden="true"><use xlink:href="#icon-kechengbiao"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">📬记得留言哦！ <br><a href="https://fshby.cc"> <b><font color="#5ea6e5"> 可留言fshby.cc</font></b></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">前端基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP-HTML-%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-number">1.1.</span> <span class="toc-text">HTTP&#x2F;HTML&#x2F;浏览器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS"><span class="toc-number">1.2.</span> <span class="toc-text">CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#javaScript"><span class="toc-number">1.3.</span> <span class="toc-text">javaScript</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E6%A0%B8%E5%BF%83"><span class="toc-number">2.</span> <span class="toc-text">前端核心</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%BC%96%E7%A8%8B"><span class="toc-number">2.1.</span> <span class="toc-text">服务端编程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ajax"><span class="toc-number">2.2.</span> <span class="toc-text">Ajax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8Web%E7%AB%AF"><span class="toc-number">2.3.</span> <span class="toc-text">移动Web端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6"><span class="toc-number">3.</span> <span class="toc-text">前端进阶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96"><span class="toc-number">3.1.</span> <span class="toc-text">前端工程化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue%E6%A1%86%E6%9E%B6"><span class="toc-number">3.2.</span> <span class="toc-text">Vue框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#React%E6%A1%86%E6%9E%B6"><span class="toc-number">3.3.</span> <span class="toc-text">React框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Angular%E6%A1%86%E6%9E%B6"><span class="toc-number">3.4.</span> <span class="toc-text">Angular框架</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/9f91e740.html" title="前端知识归纳"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/bg01.jpg" onerror="this.onerror=null;this.src='https://fshby.top/bg/bg13.jpg'" alt="前端知识归纳"/></a><div class="content"><a class="title" href="/posts/9f91e740.html" title="前端知识归纳">前端知识归纳</a><time datetime="2023-04-05T01:23:56.000Z" title="发表于 2023-04-05 09:23:56">2023-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/912c4bbc.html" title="CDN内容分发网络"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/小镇天空.jpg" onerror="this.onerror=null;this.src='https://fshby.top/bg/bg13.jpg'" alt="CDN内容分发网络"/></a><div class="content"><a class="title" href="/posts/912c4bbc.html" title="CDN内容分发网络">CDN内容分发网络</a><time datetime="2023-03-24T09:12:03.000Z" title="发表于 2023-03-24 17:12:03">2023-03-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5289c1ca.html" title="影刀RPA应用"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/木桥秋.jpg" onerror="this.onerror=null;this.src='https://fshby.top/bg/bg13.jpg'" alt="影刀RPA应用"/></a><div class="content"><a class="title" href="/posts/5289c1ca.html" title="影刀RPA应用">影刀RPA应用</a><time datetime="2023-03-22T08:58:26.000Z" title="发表于 2023-03-22 16:58:26">2023-03-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7e287b3.html" title="java知识点回顾"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/机器女警.jpg" onerror="this.onerror=null;this.src='https://fshby.top/bg/bg13.jpg'" alt="java知识点回顾"/></a><div class="content"><a class="title" href="/posts/7e287b3.html" title="java知识点回顾">java知识点回顾</a><time datetime="2023-03-22T02:11:39.000Z" title="发表于 2023-03-22 10:11:39">2023-03-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/73a3105b.html" title="hexo常用格式"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/bg08.jpg" onerror="this.onerror=null;this.src='https://fshby.top/bg/bg13.jpg'" alt="hexo常用格式"/></a><div class="content"><a class="title" href="/posts/73a3105b.html" title="hexo常用格式">hexo常用格式</a><time datetime="2023-03-18T02:10:38.000Z" title="发表于 2023-03-18 10:10:38">2023-03-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬</p><div class="bg-ad"><div>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://stellarium.org/">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/posts/eec9786.html">魔改指南</a><a href="/box/nav/">网址导航</a></li><li><a href="/social/link/">我的朋友</a><a href="/comments/">留点什么</a></li><li><a href="/personal/about/">关于作者</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a><a href="/personal/bb/">我的唠叨</a></li><li><a href="/site/time/">建设进程</a><a href="/site/census/">网站统计</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.fomal.cc/" title="Fomalhaut🥝"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://tzy1997.com/" title="唐志远の博客"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/4ab83cdce942463b.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://akilar.top/" title="Akilarの糖果屋"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/6bf1ed05796db59c.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://butterfly.js.org/" title="Butterfly"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/64cc6a7d508026e1.png" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://anzhiy.cn/" title="安知鱼"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/1b33fef8f5fb7e63.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.acozycotage.net/" title="Acozycotage"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/6a6fe6ebfd19c465.jpg" alt=""/></a></div><div class="img-group-item"><a target="_blank" rel="noopener" href="https://cdn.netdun.net/" title="网盾星球"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/70dee3f9d1ca10f3.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2020 - 2023</b></span><span><b>&nbsp;&nbsp;By fshby</b></span></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.</div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20226665" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20226665号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/萌ICP备-20226665-fe1384.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://bitiful.dogecast.com/buckets" style="margin-inline:5px" title="本网站经Service Worker分流至缤纷云对象存储"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Bucket-缤纷云-9c62da.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netdun.net/" style="margin-inline:5px" title="本站使用网盾星球提供CDN加速与防护"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/CDN-网盾星球-fff2cc.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0</span><span>%</span></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.1/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid@9.1.7/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'pNUsplBLgK5kgySQfztkzOyq-gzGzoHsz',
+      appKey: 'kJ4fjvZU6bbqyDjmEahmVTGz',
+      avatar: 'monsterid',
+      serverURLs: '',
+      placeholder: '记得留下你的昵称和邮箱...可以快速收到回复哦咕咕咕~',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, true))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.19.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getIcon = (icon, mail) => {
+    if (icon) return icon
+    let defaultIcon = '?d=monsterid'
+    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
+    return iconUrl
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const getComment = () => {
+    const serverURL = 'https://pNUsplBL.api.lncldglobal.com'
+
+    var settings = {
+      "method": "GET",
+      "headers": {
+        "X-LC-Id": 'pNUsplBLgK5kgySQfztkzOyq-gzGzoHsz',
+        "X-LC-Key": 'kJ4fjvZU6bbqyDjmEahmVTGz',
+        "Content-Type": "application/json"
+      },
+    }
+
+    fetch(`${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,settings)
+      .then(response => response.json())
+      .then(data => {
+        const valineArray = data.results.map(function (e) {
+          return {
+            'avatar': getIcon(e.QQAvatar, e.mail),
+            'content': changeContent(e.comment),
+            'nick': e.nick,
+            'url': e.url + '#' + e.objectId,
+            'date': e.updatedAt,
+          }
+        })
+        saveToLocal.set('valine-newest-comments', JSON.stringify(valineArray), 2/(60*24))
+        generateHtml(valineArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      }) 
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('valine-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer src="/js/light.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer src="/js/cursor.js"></script><span id="fps"></span><script defer data-pjax src="/js/readPercent.js"></script><script defer data-pjax src="/js/cat.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script><script src="/js/share.js"></script><script src="/js/custom.js"></script><script src="/js/sun_moon.js" async></script><canvas id="snow"></canvas><script async src="/js/snow.js"></script><script async src="/js/console.js"></script><script async src="/js/fps.js"></script><script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"></script><script type="text/javascript" src="/js/rightmenu.js"></script><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script async src="//at.alicdn.com/t/c/font_3856507_z6q14v2kjv.js"></script><script async data-pjax type="text/javascript" src='https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js'></script><script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script defer data-pjax src="/js/meihua.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="http://fshby.cc/categories/java/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 java 教程 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://fshby.cc/categories/hexo/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 hexo 教程 (6)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://fshby.cc/categories/数据结构/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 数据结构教程 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://fshby.cc/categories/生活/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">👩‍💻 生活 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://fshby.cc/categories/随想/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💡 随想 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://fshby.cc/categories/网站/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">💡 工具网站 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="http://fshby.cc/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: null;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: null}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/e75e11db.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/晚雪.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-30</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/e75e11db.html&quot;);" href="javascript:void(0);" alt="">将Java项目封装成可以分享安装的小程序</a><div class="blog-slider__text">将Java项目封装成可以分享安装的小程序</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/e75e11db.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/92edcf8f.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/akilar-candyassets/image/20201115152231.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-29</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/92edcf8f.html&quot;);" href="javascript:void(0);" alt="">工具网站</a><div class="blog-slider__text">方便的工具集</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/92edcf8f.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/f1f94f58.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://fshby.top/bg/bg01.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-30</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/f1f94f58.html&quot;);" href="javascript:void(0);" alt="">hexo主题切换</a><div class="blog-slider__text">在github与gitee部署</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/f1f94f58.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('pagination');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__swing');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('recent-post-arrow');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__bounce');
+    arr[i].setAttribute('data-wow-duration', '5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '80');
+    arr[i].setAttribute('data-wow-iteration', '100');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/about/'|| '/about/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitcalendar.fomal.cc/api?fshby",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'fshby')
+    }
+  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body></html>
