@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://fshby.cc/posts/fe4ef317.html</loc>
+    
+    <lastmod>2023-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://fshby.cc/posts/a49a5481.html</loc>
     
     <lastmod>2023-04-23</lastmod>
@@ -306,13 +315,6 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/%E6%9D%A5%E5%BF%85%E5%8A%9B/</loc>
-    <lastmod>2023-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://fshby.cc/tags/%E5%A5%BD%E4%B8%BB%E6%84%8F/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -320,14 +322,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://fshby.cc/tags/%E6%9D%A5%E5%BF%85%E5%8A%9B/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/hexo/</loc>
+    <loc>http://fshby.cc/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -348,6 +350,13 @@
   </url>
   
   <url>
+    <loc>http://fshby.cc/tags/hexo/</loc>
+    <lastmod>2023-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://fshby.cc/tags/%E9%97%AE%E5%8D%B7%E6%98%9F/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -362,14 +371,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://fshby.cc/tags/Windows%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://fshby.cc/tags/Windows%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://fshby.cc/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -410,6 +419,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://fshby.cc/tags/linux/</loc>
+    <lastmod>2023-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -420,14 +436,14 @@
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>http://fshby.cc/categories/hexo/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://fshby.cc/categories/hexo/</loc>
+    <loc>http://fshby.cc/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
