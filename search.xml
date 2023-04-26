@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>测试需求与测试点</title>
+      <link href="/posts/4b54fda.html"/>
+      <url>/posts/4b54fda.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="：测试需求的特征"><a href="#：测试需求的特征" class="headerlink" title="：测试需求的特征"></a>：<a href="https://fshby.top/test_exam/templates/functional5.html">测试需求的特征</a></h2><ol><li>可核实</li><li>不含具体的测试数据</li><li>满足正常的前置条件</li></ol><h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><ol><li>必须参加需求评审，熟悉业务的过程</li><li>确保正式工作前，各方（产品经理，开发，测试人员）对需求的理解一致</li><li>理清主业务功能</li><li>挖掘潜在需求</li></ol><h2 id="测试需求工具"><a href="#测试需求工具" class="headerlink" title="测试需求工具"></a>测试需求工具</h2><ol><li>流程图 XMind</li><li>思维导图 drawio</li><li>表格excel</li></ol><h2 id="手机验证码限制："><a href="#手机验证码限制：" class="headerlink" title="手机验证码限制："></a>手机验证码限制：</h2><ol><li>格式判断（前端限制格式）</li><li>有效 （第三方大厂判断是否有效）</li><li>时间限制（限制60秒）</li><li>写缓存<br>redis_key_13000000，限制一个小时内有线条数</li><li>测试环境跳过限制的方法：白名单、万能验证码、清缓存</li></ol><h2 id="宠物物医院管理系统"><a href="#宠物物医院管理系统" class="headerlink" title="宠物物医院管理系统"></a><a href="https://fshby.top/test_exam/templates/functional5.html">宠物物医院管理系统</a></h2><ol><li>运行phms项目</li><li>快压打开jar包内D:\phms\BOOT-INF\classes\application.properties文件</li><li>查看服务器端口号和数据库端口号，并修改为本地数据库链接端口</li><li><p>java -jar   phms-1.0.jar</p><p>注意：可以直接phms-1.0.jar文件拖动到dos命令窗口，直接显示路径，可运行<br>localhost:8082  端口本地打开<br>账号admin<br>密码1234561. </p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> phms </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>软件测试基础</title>
       <link href="/posts/c2577fef.html"/>
       <url>/posts/c2577fef.html</url>
