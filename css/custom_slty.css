@@ -1,3 +1,7 @@
+@media(max-width:600px) {
+#page.per_page : 2  ;
+}
+    
 /* root伪类指定全局颜色(照抄) */
 :root {
     --blue-custom: #5ea6e5;

@@ -88,5 +88,8 @@ document.getElementById("mode-button").addEventListener("click", function () { s
 //     zb.innerHTML = "⇦当前位置🪂";
  
 // }
-
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  page.per_page = 2;
+  
+} 
 
