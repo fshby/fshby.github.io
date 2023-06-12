@@ -43,7 +43,10 @@ svg.social_icon {
   fill: currentColor;
   overflow: hidden;
 }
-
+/* 课表隐藏显示 */
+/* #aside-content>div.card-widget.card-info.wow.animate__zoomIn>div.card-info-social-icons.is-center>a:nth-child(4){
+  display: none;
+} */
 
 
 /* 引入线上图标资源 */
