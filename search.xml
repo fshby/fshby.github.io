@@ -121,7 +121,7 @@
       <link href="/posts/12be2522.html"/>
       <url>/posts/12be2522.html</url>
       
-        <content type="html"><![CDATA[<h2 id="Excel处理报表"><a href="#Excel处理报表" class="headerlink" title="Excel处理报表"></a>Excel处理报表</h2><h3 id="TRIM（）"><a href="#TRIM（）" class="headerlink" title="TRIM（）"></a>TRIM（）</h3><p>消除首尾空格<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TRIM（区间）</span><br></pre></td></tr></table></figure></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Excel处理报表"><a href="#Excel处理报表" class="headerlink" title="Excel处理报表"></a>Excel处理报表</h2><h3 id="TRIM（）"><a href="#TRIM（）" class="headerlink" title="TRIM（）"></a>TRIM（）</h3><p>消除首尾空格<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TRIM（区间）</span><br></pre></td></tr></table></figure></p><h3 id="生成随机电话号码"><a href="#生成随机电话号码" class="headerlink" title="生成随机电话号码"></a>生成随机电话号码</h3><p>消除首尾空格<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=RANDARRAY(1,1,13000000000,19999999999,0)</span><br></pre></td></tr></table></figure></p>]]></content>
       
       
       <categories>
